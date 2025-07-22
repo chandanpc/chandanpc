@@ -6,7 +6,7 @@ const years = currentYear - startYear;
 
 let content = fs.readFileSync('README.md', 'utf8');
 content = content.replace(/Software Engineer.+experience\./, 
-  `Software Engineer having ${years}+ years of experience working in various domains like full stack, machine learning, backend and data engineering.`);
+  `Software Engineer having ${years}+ years of experience working in various domains like full stack, backend.`);
 
 fs.writeFileSync('README.md', content);
 console.log('README.md updated successfully.');
